@@ -5,8 +5,9 @@ import android.app.Activity;
 import android.view.Menu;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.karyuuouji.dicebot.classes.*;
 
-public class CrashReport extends Activity {
+public class CrashReport_Activity extends Activity {
 
 	TextView error;
 

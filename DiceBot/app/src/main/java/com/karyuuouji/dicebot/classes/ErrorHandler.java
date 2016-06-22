@@ -1,8 +1,8 @@
-package com.karyuuouji.dicebot;
+package com.karyuuouji.dicebot.classes;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
-
+import com.karyuuouji.dicebot.*;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
@@ -50,7 +50,7 @@ java.lang.Thread.UncaughtExceptionHandler {
         errorReport.append(Build.VERSION.INCREMENTAL);
         errorReport.append(LINE_SEPARATOR);
 
-        Intent intent = new Intent(myContext, CrashReport.class);
+        Intent intent = new Intent(myContext, CrashReport_Activity.class);
         intent.putExtra("error", errorReport.toString());
         myContext.startActivity(intent);
 
